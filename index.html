@@ -1,66 +1,126 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="zh">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Remy's GitHub Pages</title>
-  <link rel="icon" href="https://github.githubassets.com/favicons/favicon.png" />
+  <meta charset="utf-8" />
+  <title>Remy's Log</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
+    html {
+      font-family: "Charter", "Georgia", 'Times New Roman', serif;
+      background: #fdfdfd;
+      color: #111;
+      font-size: 20px;
+    }
+
     body {
-      margin: 0;
-      padding: 0;
-      background-color: #f6f8fa;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 2em;
       display: flex;
       justify-content: center;
-      align-items: center;
-      height: 100vh;
-      color: #24292e;
     }
 
     .container {
-      text-align: center;
-    }
-
-    .github-logo {
-      width: 100px;
-      height: 100px;
-      margin-bottom: 20px;
-      border-radius: 16px;
-      filter: hue-rotate(200deg) saturate(150%);
+      max-width: 800px;
+      width: 100%;
     }
 
     h1 {
-      margin-bottom: 10px;
-      font-size: 28px;
+      text-align: center;
+      font-size: 3em;
+      margin-bottom: 1em;
+      letter-spacing: 0.12em;
+      color: #2f4f4f;
+      /* 墨绿色 */
+      font-weight: 700;
+      user-select: none;
+    }
+
+    h2 {
+      margin-top: 2em;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 0.3em;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      border-bottom: 1px solid #ddd;
+      padding: 0.6em 0;
     }
 
     a {
-      display: inline-block;
-      font-size: 18px;
       text-decoration: none;
-      color: #0366d6;
-      border: 2px solid transparent;
-      padding: 10px 20px;
-      border-radius: 8px;
-      transition: all 0.3s ease;
+      color: #0033aa;
     }
 
     a:hover {
-      background-color: #0366d6;
-      color: #fff;
-      border-color: #0366d6;
+      text-decoration: underline;
+    }
+
+    .date {
+      font-size: 0.9em;
+      color: #888;
+      white-space: nowrap;
+      margin-left: 2em;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #ccc;
+      margin: 2em 0;
+    }
+
+    @media (max-width: 600px) {
+      li {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .date {
+        margin-top: 0.4em;
+        margin-left: 0;
+      }
     }
   </style>
 </head>
 
 <body>
   <div class="container">
-    <img class="github-logo" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
-      alt="GitHub Logo" />
-    <h1>Remy's GitHub Pages</h1>
-    <a href="https://github.com/remysys" target="_blank">Visit GitHub</a>
+    <h1>Remy's Log</h1>
+
+
+
+    <h2>kpatch 内核实时补丁系统</h2>
+    <ul>
+      <li>
+        <a href="posts/kpatch-1.html">kpatch(1): 使用kpatch给Debian 12内核打补丁</a>
+        <span class="date">2025-07-31</span>
+      </li>
+      <li>
+        <a href="posts/kpatch-2.html">kpatch(2): kpatch的内核函数替换原理</a>
+        <span class="date">2025-07-30</span>
+      </li>
+    </ul>
+
+    <h2>实现一个LLVM RISCV编译后端</h2>
+    <ul>
+      <li>
+        <a href="posts/llvm-backend.html">LLVM后端(1): LLVM后端代码生成框架</a>
+        <span class="date">2025-07-28</span>
+      </li>
+    </ul>
+
+    <hr />
+
+    <p style="text-align:center;">
+      <a href="https://github.com/remysys">GitHub</a>
+    </p>
   </div>
 </body>
 
