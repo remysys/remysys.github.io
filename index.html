@@ -30,7 +30,6 @@
       margin-bottom: 1em;
       letter-spacing: 0.12em;
       color: #2f4f4f;
-      /* 墨绿色 */
       font-weight: 700;
       user-select: none;
     }
@@ -77,6 +76,10 @@
     }
 
     @media (max-width: 600px) {
+      html {
+        font-size: 17px;
+      }
+
       li {
         flex-direction: column;
         align-items: flex-start;
@@ -94,21 +97,19 @@
   <div class="container">
     <h1>Remy's Log</h1>
 
-
-
-    <h2>kpatch 内核实时补丁系统</h2>
+    <h2>kpatch 内核实时补丁</h2>
     <ul>
       <li>
-        <a href="posts/kpatch-1.html">kpatch(1): 使用kpatch给Debian 12内核打补丁</a>
-        <span class="date">2025-07-31</span>
+        <a href="posts/kpatch-1.html">kpatch(1): 偷偷给内核动手术-在Debian上打热补丁</a>
+        <span class="date">2025-08-01</span>
       </li>
       <li>
-        <a href="posts/kpatch-2.html">kpatch(2): kpatch的内核函数替换原理</a>
+        <a href="posts/kpatch-2.html">kpatch(2): 替换还在运行的内核函数?就是这么硬核</a>
         <span class="date">2025-07-30</span>
       </li>
     </ul>
 
-    <h2>实现一个LLVM RISCV编译后端</h2>
+    <h2>实现一个LLVM RISC-V编译后端</h2>
     <ul>
       <li>
         <a href="posts/llvm-backend.html">LLVM后端(1): LLVM后端代码生成框架</a>
